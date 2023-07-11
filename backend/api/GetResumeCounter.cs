@@ -12,7 +12,7 @@ using System.Text;
 
 namespace Company.Function
 {
-    public static class GestResumeCounter
+    public static class GetResumeCounter
     {
         [FunctionName("GetResumeCounter")]
 

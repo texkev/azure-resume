@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Teb+zEXG3SZM6DZ2EwERTNvB/Qa7OqoOMfBe3gZ+dyu67UE9Ms+xg+Xw1st/7QoAW302Ra0T3p6qk7HDe1FDoA==",
+  "dgSpecHash": "3VyWaRkEFrj2i972WqeJws9DdroxCljic9j2HQavRS/SC4O5vBtp2lWnNxMwgEkgOYYWOmz6MPDIylnNLL6jHA==",
   "success": true,
   "projectFilePath": "C:\\Users\\kevin\\Desktop\\resume\\azure-resume-2\\backend\\tests\\tests.csproj",
   "expectedPackageFiles": [
@@ -222,7 +222,10 @@
     "C:\\Users\\kevin\\.nuget\\packages\\xunit.core\\2.4.2\\xunit.core.2.4.2.nupkg.sha512",
     "C:\\Users\\kevin\\.nuget\\packages\\xunit.extensibility.core\\2.4.2\\xunit.extensibility.core.2.4.2.nupkg.sha512",
     "C:\\Users\\kevin\\.nuget\\packages\\xunit.extensibility.execution\\2.4.2\\xunit.extensibility.execution.2.4.2.nupkg.sha512",
-    "C:\\Users\\kevin\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512"
+    "C:\\Users\\kevin\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512",
+    "C:\\Users\\kevin\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.19\\microsoft.netcore.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\kevin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.19\\microsoft.windowsdesktop.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\kevin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.19\\microsoft.aspnetcore.app.ref.6.0.19.nupkg.sha512"
   ],
   "logs": []
 }

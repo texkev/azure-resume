@@ -9,14 +9,15 @@ on:
 env:
   AZURE_FUNCTIONAPP_NAME: GetResumeCounter
   AZURE_FUNCTIONAPP_PACKAGE_PATH: 'backend'
-  DOTNET_VERSION: '6.0'
+  DOTNET_VERSION: '6.0.x'
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: windows-latest
+    environment: dev
     steps:
     - name: 'Checkout GitHub Action'
-      uses: actions/checkout@main
+      uses: actions/checkout@v3
 
     - name: 'Login via Azure CLI'
     uses: actions/checkout@v3
@@ -24,8 +25,8 @@ jobs:
     with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-    - name: 'Setup DotNET  ${{ env.DOTNET_VERSION }} Environment'
-    uses: actions/setup-dotnet@v1
+    - name: Setup DotNET  ${{ env.DOTNET_VERSION }} Environment
+    uses: actions/setup-dotnet@v3
     with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
 

@@ -20,12 +20,11 @@ jobs:
       uses: actions/checkout@v3
       
     - name: 'Login via Azure CLI'
-    uses: actions/checkout@v3
     uses: azure/login@v1
     with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
         
-    - name: Setup DotNET  ${{ env.DOTNET_VERSION }} Environment
+    - name: Setup DotNET ${{ env.DOTNET_VERSION }} Environment
     uses: actions/setup-dotnet@v3
     with:
         dotnet-version: ${{ env.DOTNET_VERSION }}

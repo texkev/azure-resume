@@ -25,15 +25,15 @@ jobs:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
     - name: Setup DotNet ${{ env.DOTNET_VERSION }} Environment
-      uses: actions/setup-dotnet@v3
+      uses: actions/setup-dotnet@v6
       with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
 
     - name: 'Resolve Project Dependencies Using Dotnet'
       shell: pwsh
       run: |
-        pushd ['./${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/api']
-        dotnet [build --configuration Release --output ./output]
+        pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/api'
+        dotnet run --configuration Release --output ./output
         popd
     - name: 'Run unit test'
       shell: pwsh

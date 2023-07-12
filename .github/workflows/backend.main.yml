@@ -33,7 +33,7 @@ jobs:
       shell: pwsh
       run: |
         pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/api'
-        dotnet build --configuration Release --output ./output
+        dotnet run --configuration Release --output ./output
         popd
     - name: 'Run unit test'
       shell: pwsh
